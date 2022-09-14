@@ -1,21 +1,26 @@
-//variables
+//objeto en ts//
 
-var num1=2;
-let num2=3;
-const num3=4;
+//interface es una clase que permite establecer los tipos de campos o de las funciones//
 
-// function suma(){
-//     const tem=3;
-//     console.log(tem);
+interface alumno{
+    matricula:number;
+    nombre:string;
+    email:string;
+}
+//objeto//
+const alumno:alumno={
+    nombre:'Cardiel',
+    matricula:12345,
+    email:"cardiel@gmail.com"
+}
+//arreglo//
+let mascotas=['perro','gato','conejo']
+//asignar valor//
+mascotas[1]='ashh';
+mascotas.push('nuevo')
 
-//     tem=99;
-// }
+let tem:(number|string)[]=[]
+tem.push('nombre');
+tem.push(345);
 
-//suma();
-
-let nombre='Izamar'; //para saber que es un texto//
-let num:number=23;//indica que son numeros//
-let activo:boolean=true;
-
-let matricula:number|string="456juk";//admite numeros y letras//
-matricula=12345678;
+console.log(mascotas)
