@@ -1,26 +1,35 @@
-//objeto en ts//
 
-//interface es una clase que permite establecer los tipos de campos o de las funciones//
+//creamos interfaz//
 
-interface alumno{
-    matricula:number;
+interface alumnosDeUni{
     nombre:string;
-    email:string;
-}
-//objeto//
-const alumno:alumno={
-    nombre:'Cardiel',
-    matricula:12345,
-    email:"cardiel@gmail.com"
-}
-//arreglo//
-let mascotas=['perro','gato','conejo']
-//asignar valor//
-mascotas[1]='ashh';
-mascotas.push('nuevo')
+    edad:number;
+    calle:string;
+    pais:string;
+    estado:string;
 
-let tem:(number|string)[]=[]
-tem.push('nombre');
-tem.push(345);
+    mostrarDireccion:()=>void;
+}
 
-console.log(mascotas)
+const AlumnoUtl:alumnosDeUni={
+        nombre:'Bruno',
+        edad:23,
+        calle:'campanario',
+        pais:'México',
+        estado:'GTO',
+        
+        mostrarDireccion(){
+
+            return this.nombre+','+ this.estado+','+ this.pais;
+        }
+
+    }
+
+    const direccion=AlumnoUtl.mostrarDireccion();
+    console.log(direccion);
+    
+    
+
+    
+
+    
