@@ -23,5 +23,7 @@ let tem:(number|string)[]=[]
 tem.push('nombre');
 tem.push(345);
 
+
+
 console.log(mascotas)
 console.table(alumno)
